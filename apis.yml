@@ -1,21 +1,47 @@
 aid: leapmotor
 name: Leapmotor
-description: 'Leapmotor is a company surfaced as a portfolio company of hongshan and added to the API
-  Evangelist network as a stub for enrichment. Sector: technology. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Leapmotor (Zhejiang Leapmotor Technology Co., Ltd., HKEX: 9863) is a Chinese intelligent
+  electric vehicle manufacturer founded in 2015 and headquartered in Hangzhou, China, which sold its first
+  vehicles in 2019. Leapmotor designs and builds battery-electric and range-extended (REEV) passenger
+  vehicles — including the T03 city car and the B03X, B05, B10 and C10 SUVs — on its own vertically
+  integrated LEAP platform, developing its electric drive, battery, and intelligent cockpit and driving
+  systems in house. Stellantis took a stake in the company in 2023 and, through the Leapmotor
+  International joint venture, distributes Leapmotor vehicles across Europe and other export markets via
+  leapmotor.net. Leapmotor operates connected-vehicle services — the Leapmotor mobile app, OTA software
+  updates, and the Leapmotor Connected Experience — but publishes no public developer API program,
+  developer portal, or API documentation; the vehicle cloud interfaces used by its mobile app are private
+  and only reached through unofficial, reverse-engineered community clients.'
 url: https://raw.githubusercontent.com/api-evangelist/leapmotor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - hongshan
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-program
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://kinlane-productions2.s3.amazonaws.com/api-evangelist-site/company/leapmotor.png
 tags:
 - Company
 - Technology
+- Automotive
+- Electric Vehicles
+- Connected Vehicles
+- Manufacturing
+- Mobility
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,37 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/leapmotor-domain-security.yml
 - type: Website
-  url: https://leapmotor.com
+  url: https://www.leapmotor.net/
+- type: Website
+  name: Leapmotor China
+  url: https://www.leapmotor.cn/
+- type: InvestorRelations
+  url: https://ir.leapmotor.com/en/
+- type: Support
+  name: Help & Support
+  url: https://www.leapmotor.net/uk/assistance
+- type: HelpCenter
+  name: Customer Assistance Centre
+  url: https://www.leapmotor.net/uk/customerassistancecentre
+- type: PrivacyPolicy
+  url: https://www.leapmotor.net/uk/privacy-policy
+- type: TermsOfService
+  url: https://www.leapmotor.net/uk/terms-conditions
+- type: CookiePolicy
+  url: https://www.leapmotor.net/uk/cookie-policy
+- type: Packages
+  name: Leapmotor community packages
+  url: packages/leapmotor-packages.yml
+- type: WellKnown
+  name: Well-known discovery probe
+  url: well-known/leapmotor-well-known.yml
+- type: LLMsTxt
+  url: llms/leapmotor-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
