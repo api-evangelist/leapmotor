@@ -1,0 +1,89 @@
+generated: '2026-07-19'
+method: probed
+source: live probe of /.well-known/ paths on Leapmotor web hosts
+notes: >-
+  No Leapmotor host publishes any /.well-known/ discovery document. www.leapmotor.net
+  and cn.leapmotor.com return hard 404s for most paths. www.leapmotor.cn and
+  itp-open.leapmotor.com return HTTP 200 for every /.well-known/ path, but the body is
+  the single-page-app HTML shell (content-type text/html), not the requested document —
+  recorded below as soft_404 so a later run does not mistake them for real artifacts.
+  No security.txt, no OIDC/OAuth authorization-server metadata, no api-catalog,
+  no ai-plugin.json.
+hosts:
+- host: https://www.leapmotor.net
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://cn.leapmotor.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    soft_404: true
+    content_type: text/html
+- host: https://www.leapmotor.cn
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    soft_404: true
+    content_type: text/html
+- host: https://itp-open.leapmotor.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    soft_404: true
+    content_type: text/html
+robots:
+  url: https://www.leapmotor.net/robots.txt
+  status: 200
+  sitemap: https://www.leapmotor.net/sitemap.xml
+llms_txt:
+  url: https://www.leapmotor.net/llms.txt
+  status: 404

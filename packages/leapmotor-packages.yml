@@ -1,0 +1,56 @@
+generated: '2026-07-19'
+method: searched
+source: npm registry search, PyPI, crates.io
+notes: >-
+  Leapmotor publishes NO first-party client libraries or SDKs. There is no Leapmotor
+  developer portal, no API documentation, and no official GitHub organization for API
+  clients. Every package below is third-party community software built by reverse
+  engineering the private vehicle-cloud interfaces used by the Leapmotor mobile app —
+  none is official, none is supported by Leapmotor, and none should be counted as a
+  provider SDK. Registries probed with no relevant result: crates.io (0), PyPI
+  (no "leapmotor"/"pyleapmotor"), Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist.
+official_sdks: false
+packages:
+- language: python
+  registry: pypi
+  name: leapmotor-api
+  version: 0.3.2
+  url: https://pypi.org/project/leapmotor-api/
+  source: https://github.com/markoceri/leapmotor-api
+  install: pip install leapmotor-api
+  official: false
+  description: >-
+    Unofficial Python client for the Leapmotor vehicle cloud API. Requires the Leapmotor
+    mobile app certificate and private key (app_cert.pem / app_key.pem) to authenticate,
+    i.e. it reuses the app's mTLS client credentials. Covers vehicle status, charging
+    history, consumption statistics and remote-control operations. Derived from
+    reverse-engineering work behind a Home Assistant integration.
+- language: javascript
+  registry: npm
+  name: iobroker.leapmotor
+  version: 0.6.2
+  url: https://www.npmjs.com/package/iobroker.leapmotor
+  source: https://github.com/backfisch88/ioBroker.leapmotor
+  install: npm install iobroker.leapmotor
+  license: MIT
+  official: false
+  description: >-
+    Community ioBroker home-automation adapter that integrates Leapmotor electric
+    vehicles. Maintained by Henrik Schoenhofen, not by Leapmotor.
+- language: javascript
+  registry: npm
+  name: leap-cn-mcp
+  version: 0.1.7
+  url: https://www.npmjs.com/package/leap-cn-mcp
+  install: npx leap-cn-mcp
+  official: false
+  kind: mcp-server
+  description: >-
+    Community MCP stdio server exposing the Leapmotor China mobile-app APIs to agents.
+    Published by npm user "suchain"; no repository, license, or homepage declared, and
+    no affiliation with Leapmotor. Recorded here because it is a real published package,
+    NOT wired as a `type: MCPServer` pointer — Leapmotor operates no official MCP server.
+excluded:
+- name: leapmotor-fe
+  registry: npm
+  reason: generic "A Vue.js project" scaffold, no demonstrable relationship to Leapmotor the company

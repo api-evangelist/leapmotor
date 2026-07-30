@@ -1,0 +1,45 @@
+# Leapmotor
+
+> Zhejiang Leapmotor Technology Co., Ltd. (HKEX: 9863) is a Chinese intelligent electric vehicle manufacturer founded in 2015 and headquartered in Hangzhou. It builds battery-electric and range-extended (REEV) passenger vehicles — the T03 city car and the B03X, B05, B10 and C10 SUVs — on its own vertically integrated LEAP platform, developing electric drive, battery, and intelligent cockpit and driving systems in house. Stellantis took a stake in 2023 and distributes Leapmotor vehicles in Europe and export markets through the Leapmotor International joint venture.
+
+## API status
+
+Leapmotor publishes **no public developer API program**. As of 2026-07-19 there is no developer portal, no API documentation, no API reference, no OpenAPI/AsyncAPI description, no public SDKs, no sandbox, and no MCP server. Probing `developer.leapmotor.com`, `open.leapmotor.com`, `api.leapmotor.com` and `iot.leapmotor.com` returned no resolving host, and no Leapmotor host serves a `/.well-known/` discovery document or an `llms.txt`.
+
+The company does operate connected-vehicle services — the Leapmotor mobile app, over-the-air software updates, and the "Leapmotor Connected Experience" — but the vehicle-cloud interfaces behind them are private, authenticated with the mobile app's own mTLS client certificate, and are only reachable through unofficial community clients. Treat any Leapmotor "API" you encounter as reverse-engineered and unsupported.
+
+`itp-open.leapmotor.com` ("ITP — 智能技术信息平台", Intelligent Technology Information Platform) exists and responds, but serves a login-gated single-page application with no public documentation; it is not a developer API portal.
+
+## Sites
+
+- [Leapmotor International](https://www.leapmotor.net/): official international site and market selector (Europe, Middle East, Asia-Pacific, Latin America).
+- [Leapmotor China](https://www.leapmotor.cn/): Chinese-market official site.
+- [Leapmotor China (consumer)](https://cn.leapmotor.com/): Chinese consumer site and app download.
+- [Investor Relations](https://ir.leapmotor.com/en/): HKEX 9863 investor relations.
+
+## Product and owner pages
+
+- [Leapmotor Connected Experience](https://www.leapmotor.net/uk/leapmotor-connected-experience): connected-car and mobile-app features.
+- [OTA Updates](https://www.leapmotor.net/uk/ota): over-the-air vehicle software upgrades.
+- [Owners Hub](https://www.leapmotor.net/uk/owners-hub): owner resources.
+- [Help & Support](https://www.leapmotor.net/uk/assistance): support entry point.
+- [Customer Assistance Centre](https://www.leapmotor.net/uk/customerassistancecentre): contact channels.
+
+## Legal
+
+- [Privacy Policy](https://www.leapmotor.net/uk/privacy-policy)
+- [Terms & Conditions](https://www.leapmotor.net/uk/terms-conditions)
+- [Cookies Policy](https://www.leapmotor.net/uk/cookie-policy)
+
+## Community (unofficial — not supported by Leapmotor)
+
+- [leapmotor-api (PyPI)](https://pypi.org/project/leapmotor-api/): reverse-engineered Python client for the vehicle cloud API.
+- [ioBroker.leapmotor (npm)](https://www.npmjs.com/package/iobroker.leapmotor): community home-automation adapter.
+- [leap-cn-mcp (npm)](https://www.npmjs.com/package/leap-cn-mcp): community MCP stdio server over the Leapmotor China app APIs.
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/leapmotor/refs/heads/main/apis.yml): the APIs.json profile for Leapmotor.
+- [packages/leapmotor-packages.yml](https://raw.githubusercontent.com/api-evangelist/leapmotor/refs/heads/main/packages/leapmotor-packages.yml): package-registry survey (no first-party SDKs).
+- [well-known/leapmotor-well-known.yml](https://raw.githubusercontent.com/api-evangelist/leapmotor/refs/heads/main/well-known/leapmotor-well-known.yml): /.well-known/ probe results.
+- [security/leapmotor-domain-security.yml](https://raw.githubusercontent.com/api-evangelist/leapmotor/refs/heads/main/security/leapmotor-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe.
