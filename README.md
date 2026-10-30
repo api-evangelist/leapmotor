@@ -64,25 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Leapmotor (Zhejiang Leapmotor Technology Co., Ltd., HKEX: 9863) is a Chinese intelligent electric vehicle manufacturer founded in 2015 and headquartered in Hangzhou. It builds battery-electric and range-extended (REEV) passenger vehicles — the T03 city car and the B03X, B05, B10 and C10 SUVs — on its own vertically integrated LEAP platform, developing its electric drive, battery, and intelligent cockpit and driving systems in house. Stellantis took a stake in 2023 and distributes Leapmotor vehicles across Europe and other export markets through the Leapmotor International joint venture.
+Leapmotor (Zhejiang Leapmotor Technology Co., Ltd., HKEX: 9863) is a Chinese intelligent electric vehicle manufacturer founded in 2015 and headquartered in Hangzhou, China, which sold its first vehicles in 2019. Leapmotor designs and builds battery-electric and range-extended (REEV) passenger vehicles — including the T03 city car and the B03X, B05, B10 and C10 SUVs — on its own vertically integrated LEAP platform, developing its electric drive, battery, and intelligent cockpit and driving systems in house. Stellantis took a stake in the company in 2023 and, through the Leapmotor International joint venture, distributes Leapmotor vehicles across Europe and other export markets via leapmotor.net. Leapmotor operates connected-vehicle services — the Leapmotor mobile app, OTA software updates, and the Leapmotor Connected Experience — but publishes no public developer API program, developer portal, or API documentation; the vehicle cloud interfaces used by its mobile app are private and only reached through unofficial, reverse-engineered community clients.
 
-- International site: https://www.leapmotor.net/
-- China site: https://www.leapmotor.cn/
-- Investor relations: https://ir.leapmotor.com/en/
+**Areas:** Company · Technology · Automotive · Electric Vehicles · Connected Vehicles · Manufacturing · Mobility · China
 
-## API status
+## Leapmotor on APIs.io
 
-**No public developer API program.** As of 2026-07-19 Leapmotor publishes no developer portal, API documentation, API reference, OpenAPI/AsyncAPI description, first-party SDK, sandbox, or MCP server. `developer.`, `open.`, `api.` and `iot.leapmotor.com` do not resolve, and no Leapmotor host serves a `/.well-known/` document or `llms.txt`.
+Everything profiled for Leapmotor is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/leapmotor/](https://apis.io/providers/leapmotor/)** — or go straight to one of the APIs or properties below.
 
-Leapmotor does run connected-vehicle services (mobile app, OTA updates, "Leapmotor Connected Experience"), but the vehicle-cloud interfaces behind them are private and authenticated with the mobile app's own mTLS client certificate. The only clients that exist are unofficial, reverse-engineered community projects — catalogued in `packages/` and explicitly marked `official: false`.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | File |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Leapmotor Domain Security](https://apis.io/security/leapmotor/leapmotor-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.leapmotor.net/)
+- [Support](https://www.leapmotor.net/uk/assistance)
+- [Terms of service](https://www.leapmotor.net/uk/terms-conditions)
+- [Privacy policy](https://www.leapmotor.net/uk/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 10.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Packages / registry survey | `packages/leapmotor-packages.yml` |
-| Well-known probe | `well-known/leapmotor-well-known.yml` |
-| Domain security probe | `security/leapmotor-domain-security.yml` |
-| llms.txt | `llms/leapmotor-llms.txt` |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
 
-Backed by: hongshan
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/leapmotor/](https://apis.io/providers/leapmotor/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Leapmotor: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/leapmotor/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
